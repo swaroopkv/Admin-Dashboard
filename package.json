@@ -1,0 +1,26 @@
+{
+  "name": "import-csv-nodejs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/start"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "busboy": "^0.3.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.15.5",
+    "express-session": "^1.16.2",
+    "fast-csv": "^3.0.1",
+    "fs": "0.0.1-security",
+    "mongoose": "^4.13.6",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "path": "^0.12.7",
+    "pug": "2.0.0-beta11",
+    "pug-cli": "^1.0.0-alpha6",
+    "serve-favicon": "^2.4.5"
+  }
+}

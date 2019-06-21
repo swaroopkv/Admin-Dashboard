@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  div
+  h1.text-muted Admin Dashboard
+  nav
+    ul.nav.nav-justified
+      li
+        a(href='javascript:void(0)',id='home') Home
+      li
+        a(href='javascript:void(0)',id='importdata') Import CSV
+      li
+        a(href='javascript:void(0)',id='fetchdata') Fetch Data
+      li
+        a(href='javascript:void(0)',id='query1') Query1 First shop
+      li
+        a(href='javascript:void(0)',id='query12') Query1 Second shop
+      li
+        a(href='javascript:void(0)',id='query2') Query2 First shop
+      li
+        a(href='javascript:void(0)',id='query22') Query2 Second store
+      li
+        a(href='javascript:void(0)',id='query31') Query3 First shop Millenium
+      li
+        a(href='javascript:void(0)',id='query32') Query3 First shop GenZ
+      li
+        a(href='javascript:void(0)',id='query33') Query3 Second shop Millenium
+      li
+        a(href='javascript:void(0)',id='query34') Query3 Second shop GenZ
+
+  br
+  p#message.alert.alert-success(style='display:none')
+  br
+  form(action='/upload', method='post', enctype='multipart/form-data')
+    input(type='file', name='CSVfile')
+    input(type='submit',value='submit') 
+
+  br
+  table.table.table-bordered
+    thead
+        tr 
+            th Store details
+
+
+    tbody#trdata.
+         Click on <strong>Import CSV</strong> button to import and save data to MongoDB. <br />Click on <strong>Fetch Data</strong> button to display data from database
